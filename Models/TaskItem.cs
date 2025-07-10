@@ -8,4 +8,9 @@ public class TaskItem
     public bool IsCompleted { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime? CompletedAt { get; set; }
+    
+    // Relacionamento com usuário
+    public int UserId { get; set; }
+    public User User { get; set; } = null!;
+
 }
